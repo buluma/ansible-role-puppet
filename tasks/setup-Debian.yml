@@ -1,15 +1,16 @@
 ---
-- name: Ensure depdencies are installed.
+- name: Ensure dependencies are installed.
   apt:
-    name: "{{ item }}"
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - gnupg2
+      - xz-utils
     state: present
-  with_items:
-    - apt-transport-https
-    - ca-certificates
 
 - name: Add Puppet Labs apt key.
   apt_key:
-    url: https://apt.puppetlabs.com/DEB-GPG-KEY-puppetlabs
+    url: https://apt.puppetlabs.com/DEB-GPG-KEY-puppet-20250406
     state: present
 
 - name: Add Puppet Labs repository.
@@ -19,5 +20,6 @@
   register: puppet_apt_deb_install
 
 - name: Update apt cache if necessary.
-  apt: update_cache=yes
+  apt: update_cache=true
   when: puppet_apt_deb_install.changed
+  tags: ['skip_ansible_lint']
