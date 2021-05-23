@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: buluma
+  role_name: puppet
   description: Puppet for Linux.
   company: "ShadowNEt"
   license: "license (BSD, MIT)"

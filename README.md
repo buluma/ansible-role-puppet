@@ -1,12 +1,12 @@
 # Ansible Role: Puppet
 
-[![CI](https://github.com/geerlingguy/ansible-role-puppet/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-puppet/actions?query=workflow%3ACI)
+[![CI](https://github.com/buluma/ansible-role-puppet/workflows/CI/badge.svg?event=push)](https://github.com/buluma/ansible-role-puppet/actions?query=workflow%3ACI)
 
 An Ansible Role that installs [Puppet](https://www.docker.com) on Linux.
 
 ## Requirements
 
-Requires Java 7 or later to be installed on the server (you can use the `geerlingguy.java` role to install Java if needed; see the test playbook in `tests/` for an example).
+Requires Java 7 or later to be installed on the server (you can use the `buluma.java` role to install Java if needed; see the test playbook in `tests/` for an example).
 
 ## Role Variables
 
@@ -45,7 +45,7 @@ None.
 
     - hosts: all
       roles:
-        - geerlingguy.puppet
+        - buluma.puppet
 
 ## License
 
