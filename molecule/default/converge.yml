@@ -9,4 +9,4 @@
   roles:
     - role: buluma.java
       when: ansible_os_family == 'Debian'
-    - role: geerlingguy.puppet
+    - role: buluma.puppet

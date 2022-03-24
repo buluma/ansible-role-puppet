@@ -21,7 +21,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   roles:
     - role: buluma.java
       when: ansible_os_family == 'Debian'
-    - role: geerlingguy.puppet
+    - role: buluma.puppet
 ```
 
 
