@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Install Puppet on your system (Linux).
+  homepage: https://buluma.github.io/
+  topics: system, configuration, cm, orchestration, server, puppet, ansible, molecule, tox, playbook, hacktoberfest
