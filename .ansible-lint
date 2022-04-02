@@ -12,4 +12,5 @@ exclude_paths:
   - ./.cache
 
 skip_list:
-  - 'syntax-check'
+  - syntax-check
+  - fqcn-builtins
