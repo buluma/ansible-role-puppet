@@ -15,9 +15,6 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   hosts: all
   become: true
 
-  pre_tasks:
-    - include: java-11.yml
-
   roles:
     - role: buluma.java
       when: ansible_os_family == 'Debian'
