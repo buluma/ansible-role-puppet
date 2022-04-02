@@ -3,8 +3,8 @@
   hosts: all
   become: true
 
-  pre_tasks:
-    - include: java-11.yml
+  # pre_tasks:
+  #   - include: java-11.yml
 
   roles:
     - role: buluma.java
