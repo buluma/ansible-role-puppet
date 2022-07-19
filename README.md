@@ -75,7 +75,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |---------|----|
 |debian|all|
 |el|8|
-|ubuntu|focal|
+|ubuntu|bionic, focal|
 
 The minimum version of Ansible required is 2.10, tests have been done to:
 
@@ -97,4 +97,4 @@ Apache-2.0
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
