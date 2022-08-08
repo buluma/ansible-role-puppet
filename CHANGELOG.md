@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-puppet/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.1...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.2...HEAD)
+
+**Closed issues:**
+
+- Restore debian on further testing [\#6](https://github.com/buluma/ansible-role-puppet/issues/6)
+
+## [v0.1.2](https://github.com/buluma/ansible-role-puppet/tree/v0.1.2) (2022-07-19)
+
+[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.1...v0.1.2)
 
 **Closed issues:**
 
