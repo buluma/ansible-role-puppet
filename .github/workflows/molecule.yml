@@ -43,13 +43,12 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          # TODO: Restore debian on further testing
-          # - image: "debian-systemd"
-          #   tag: "latest"
-          # - image: "debian-systemd"
-          #   tag: "bookworm"
-          - image: "enterpriselinux"
+          - image: "debian-systemd"
             tag: "latest"
+          - image: "debian-systemd"
+            tag: "bookworm"
+          - image: "enterpriselinux"
+            tag: "8"
           - image: "docker-ubuntu-systemd"
             tag: "bionic"
           - image: "docker-ubuntu-systemd"

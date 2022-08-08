@@ -1,0 +1,10 @@
+---
+#
+# Ansible managed
+#
+argument_specs:
+  main:
+    short_description: Install Puppet on your system (Linux).
+    description: >
+      Install Puppet on your system (Linux).
+    author: Michael Buluma
