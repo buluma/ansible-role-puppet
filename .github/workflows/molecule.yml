@@ -43,8 +43,6 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "debian"
-            tag: "10"
           - image: "enterpriselinux"
             tag: "8"
           - image: "docker-ubuntu-systemd"
