@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-puppet/tree/HEAD)
+## [v0.1.3](https://github.com/buluma/ansible-role-puppet/tree/v0.1.3) (2022-10-01)
 
-[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.2...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.2...v0.1.3)
 
 **Closed issues:**
 
