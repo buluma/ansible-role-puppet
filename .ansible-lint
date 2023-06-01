@@ -6,13 +6,14 @@ exclude_paths:
   - ./meta/preferences.yml
   - ./molecule/default/prepare.yml
   - ./molecule/default/converge.yml
-  - ./molecule/default/verify.yml
   - ./molecule/default/collections.yml
-  - ./molecule/default/java-11.yml
   - ./.tox
   - ./.cache
+  - ./.github
+  - ./requirements.yml
 
 skip_list:
-  - syntax-check
-  - fqcn-builtins
-  - no-handler
+  - yaml[truthy]
+
+enable_list:
+  - name[prefix]

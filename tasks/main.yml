@@ -1,9 +1,11 @@
 ---
-- include: setup-RedHat.yml
+- name: Import Setup-RedHat
+  ansible.builtin.import_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
 # TODO: pull together @buluma
-- include: setup-Debian.yml
+- name: Import Setup-Debian
+  ansible.builtin.import_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Install Puppet.
@@ -12,7 +14,7 @@
     state: present
 
 - name: Add Puppet bin directory to $PATH.
-  lineinfile: >
+  ansible.builtin.lineinfile: >
     dest=/etc/environment
     state=present
     backrefs=yes

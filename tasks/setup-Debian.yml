@@ -1,5 +1,5 @@
 ---
-- name: Ensure dependencies are installed.
+- name: setup-Debian | Ensure dependencies are installed.
   ansible.builtin.apt:
     name:
       - apt-transport-https
@@ -8,12 +8,12 @@
       - xz-utils
     state: present
 
-- name: Add Puppet Labs apt key.
+- name: setup-Debian | Add Puppet Labs apt key.
   ansible.builtin.apt_key:
     url: https://apt.puppetlabs.com/DEB-GPG-KEY-puppet-20250406
     state: present
 
-- name: Add Puppet Labs repository.
+- name: setup-Debian | Add Puppet Labs repository.
   ansible.builtin.apt:
     deb: "{{ puppet_apt_deb }}"
     state: present

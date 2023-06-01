@@ -5,7 +5,7 @@ galaxy_info:
   description: Install Puppet on your system (Linux).
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
 
   platforms:
     - name: Debian
@@ -18,7 +18,9 @@ galaxy_info:
       versions:
         - bionic
         - focal
-
+    - name: Kali
+      versions:
+        - all
   galaxy_tags:
     - system
     - configuration
