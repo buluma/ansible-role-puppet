@@ -2,9 +2,9 @@
 
 Install Puppet on your system (Linux).
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-puppet/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-puppet/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-puppet/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-puppet)|[![quality](https://img.shields.io/ansible/quality/55008)](https://galaxy.ansible.com/buluma/puppet)|[![downloads](https://img.shields.io/ansible/role/d/55008)](https://galaxy.ansible.com/buluma/puppet)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-puppet/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-puppet/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-puppet/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-puppet)|[![downloads](https://img.shields.io/ansible/role/d/4809)](https://galaxy.ansible.com/buluma/puppet)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
