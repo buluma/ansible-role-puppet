@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-puppet/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.3...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#11](https://github.com/buluma/ansible-role-puppet/issues/11)
+- Update action [\#10](https://github.com/buluma/ansible-role-puppet/issues/10)
+
 ## [v0.1.3](https://github.com/buluma/ansible-role-puppet/tree/v0.1.3) (2022-10-01)
 
 [Full Changelog](https://github.com/buluma/ansible-role-puppet/compare/v0.1.2...v0.1.3)
