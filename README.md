@@ -1,4 +1,4 @@
-# [puppet](#puppet)
+# [Ansible role puppet](#puppet)
 
 Install Puppet on your system (Linux).
 
