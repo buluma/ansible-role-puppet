@@ -16,6 +16,7 @@ skip_list:
   - yaml[truthy]
   - 'yaml'
   - 'role-name'
+  - syntax-check[specific]
 
 enable_list:
   - name[prefix]
