@@ -17,6 +17,7 @@ skip_list:
   - yaml[truthy]
   - 'yaml'
   - 'role-name'
+  - no-free-form
 
 enable_list:
   - name[prefix]
