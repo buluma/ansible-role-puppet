@@ -5,7 +5,6 @@
 exclude_paths:
   - meta/preferences.yml
   - molecule/default/prepare.yml
-  - molecule/default/java-11.yml
   - molecule/default/converge.yml
   - molecule/default/collections.yml
   - .tox
@@ -15,9 +14,6 @@ exclude_paths:
 
 skip_list:
   - yaml[truthy]
-  - 'yaml'
-  - 'role-name'
-  - no-free-form
 
 enable_list:
   - name[prefix]
