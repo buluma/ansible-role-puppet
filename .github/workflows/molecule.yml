@@ -27,45 +27,58 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
+defaults:
+  run:
+    working-directory: 'buluma.puppet'
+    
 jobs:
   lint:
-    runs-on: ubuntu-20.04
+    name: Lint
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: ansible-lint
-        uses: ansible-community/ansible-lint-action@main
-  test:
-    needs:
-      - lint
-    runs-on: ubuntu-20.04
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+        with:
+          path: 'geerlingguy.puppet'
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies.
+        run: pip3 install yamllint
+
+      - name: Lint code.
+        run: |
+          yamllint .
+  molecule:
+    name: Molecule
+    runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
-        config:
-          - image: "debian-systemd"
-            tag: "latest"
-          - image: "debian-systemd"
-            tag: "bullseye"
-          - image: "enterpriselinux"
-            tag: "8"
-          - image: "docker-ubuntu-systemd"
-            tag: "bionic"
-          - image: "docker-ubuntu-systemd"
-            tag: "focal"
-          - image: "kali"
-            tag: "latest"
+        distro:
+          - rockylinux8
+          - ubuntu2004
+          - debian10
+
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
         with:
-          path: "${{ github.repository }}"
-      # - name: disable apparmor for mysql
-      #   run: sudo ln -s /etc/apparmor.d/usr.sbin.mysqld /etc/apparmor.d/disable/
-      # - name: parse apparmor for mysql
-      #   run: sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
-      - name: molecule
-        uses: buluma/molecule-action@v5.1.1
+          path: 'buluma.puppet'
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v2
         with:
-          image: ${{ matrix.config.image }}
-          tag: ${{ matrix.config.tag }}
+          python-version: '3.x'
+
+      - name: Install test dependencies.
+        run: pip3 install ansible molecule molecule-plugins[docker] docker
+
+      - name: Run Molecule tests.
+        run: molecule test
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
+          MOLECULE_DISTRO: ${{ matrix.distro }}
