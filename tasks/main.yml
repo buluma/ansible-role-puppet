@@ -1,20 +1,17 @@
 ---
-- name: Import Setup-RedHat
-  ansible.builtin.import_tasks: setup-RedHat.yml
+- include: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
-# TODO: pull together @buluma
-- name: Import Setup-Debian
-  ansible.builtin.import_tasks: setup-Debian.yml
+- include: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Install Puppet.
-  ansible.builtin.package:
+  package:
     name: "{{ puppet_package }}"
     state: present
 
 - name: Add Puppet bin directory to $PATH.
-  ansible.builtin.lineinfile: >
+  lineinfile: >
     dest=/etc/environment
     state=present
     backrefs=yes
@@ -23,7 +20,7 @@
     mode=0644
 
 - name: Ensure Puppet service is started and enabled at boot.
-  ansible.builtin.service:
+  service:
     name: "{{ puppet_service }}"
     state: "{{ puppet_service_state }}"
     enabled: "{{ puppet_service_enabled }}"
