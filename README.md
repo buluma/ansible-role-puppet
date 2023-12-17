@@ -17,8 +17,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   become: true
   gather_facts: yes
 
-  # pre_tasks:
-  #   - include: java-11.yml
+  pre_tasks:
+    - include: java-11.yml
 
   roles:
     - role: buluma.java
