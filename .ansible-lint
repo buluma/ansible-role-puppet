@@ -13,9 +13,7 @@ exclude_paths:
   - requirements.yml
 
 skip_list:
-  - yaml[truthy]  
-  - 'yaml'
-  - 'role-name'
+  - yaml[truthy]
 
 enable_list:
   - name[prefix]
