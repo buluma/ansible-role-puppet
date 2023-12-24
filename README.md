@@ -1,10 +1,10 @@
-# [Ansible role puppet](#puppet)
+# Ansible role [puppet](https://galaxy.ansible.com/ui/standalone/roles/buluma/puppet/documentation)
 
 Install Puppet on your system (Linux).
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-puppet/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-puppet/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-puppet/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-puppet/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-puppet.svg)](https://github.com/buluma/ansible-role-puppet/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/puppet)](https://galaxy.ansible.com/ui/standalone/roles/buluma/puppet/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -96,13 +96,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-puppet/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-puppet/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
